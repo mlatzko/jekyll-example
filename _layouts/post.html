@@ -1,0 +1,30 @@
+---
+layout: default
+---
+        <!-- main -->
+        <div id="main" style="padding-top:2em">
+            <article class="box container">
+                <header>
+                    <h1>jekyll-example <sub></sub></h1>
+                    <h2>{{ page.title }}</h2>
+                    <p>
+                        {{ page.date | date: "%B %-d, %Y at %H:%M%p" }}
+                        {% if page.author %} • {{ page.author }}{% endif %}
+                        <br>
+                        <a href="{{ site.url }}#news">back to previous page</a>
+                    </p>
+                </header>
+
+                {% if page.image %}
+                <span class="image left"><img src="{{ site.url }}/{{ page.image }}" alt=""></span>
+                {% endif %}
+
+                {{ content }}
+
+                <footer>
+                    <a href="{{ site.url }}#news">back to previous page</a>
+                </footer>
+            </article>
+        </div><!-- /#main -->
+
+        {% include footer.html %}

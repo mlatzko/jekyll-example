@@ -1,0 +1,38 @@
+---
+layout: default
+title : "The ultimate jekyll example"
+---
+
+        <!-- Header -->
+        <div id="header">
+            <span class="logo icon fa-rocket"></span>
+            <h1>Hi. This is a jekyll example page</h1>
+            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.</p>
+        </div>
+
+        <!-- Main -->
+        <div id="main">
+
+            <header class="major container 75%">
+                <h2>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.</h2>
+            </header>
+
+            <a name="news"/>
+
+            <div class="box container 75%">
+                <h1>News</h1>
+
+                <ul class="alt" style="text-align:center;">
+                    {% for post in site.posts %}
+                    <li>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                            {{ post.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+
+        {% include footer.html %}

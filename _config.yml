@@ -1,2 +1,2 @@
-baseurl: ""
-url    : "http://localhost:8080"
+baseurl: "jekyll-example"
+url    : "http://mlatzko.github.io/"

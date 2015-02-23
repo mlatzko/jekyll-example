@@ -1,2 +1,11 @@
-baseurl: ""
-url    : "http://localhost:8080/"
+# Site settings
+baseurl     : ""
+url         : "http://localhost:8080"
+
+# Site meta information's
+title       : "The ultimate jekyll example"
+description : "keyword, keywords"
+keywords    : "keyword, keywords"
+author      : "A guy in a company"
+
+# Misc

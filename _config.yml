@@ -1,2 +1,11 @@
-baseurl: "jekyll-example"
-url    : "http://mlatzko.github.io/"
+# Site settings
+baseurl     : "/jekyll-example"
+url         : "http://mlatzko.github.io"
+
+# Site meta information's
+title       : "The ultimate jekyll example"
+description : "keyword, keywords"
+keywords    : "keyword, keywords"
+author      : "A guy in a company"
+
+# Misc

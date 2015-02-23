@@ -11,18 +11,18 @@ layout: default
                         {{ page.date | date: "%B %-d, %Y at %H:%M%p" }}
                         {% if page.author %} • {{ page.author }}{% endif %}
                         <br>
-                        <a href="{{ site.url }}#news">back to previous page</a>
+                        <a href="{{ site.url }}{{ site.baseurl }}#news">back to previous page</a>
                     </p>
                 </header>
 
                 {% if page.image %}
-                <span class="image left"><img src="{{ site.url }}/{{ page.image }}" alt=""></span>
+                <span class="image left"><img src="{{ site.url }}{{ site.baseurl }}/{{ page.image }}" alt=""></span>
                 {% endif %}
 
                 {{ content }}
 
                 <footer>
-                    <a href="{{ site.url }}#news">back to previous page</a>
+                    <a href="{{ site.url }}{{ site.baseurl }}#news">back to previous page</a>
                 </footer>
             </article>
         </div><!-- /#main -->
